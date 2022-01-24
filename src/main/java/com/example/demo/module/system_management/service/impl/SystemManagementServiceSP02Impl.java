@@ -1,6 +1,8 @@
 package com.example.demo.module.system_management.service.impl;
 
 import com.example.demo.client_ui.dto.account.AccountRoleDTO;
+import com.example.demo.client_ui.dto.config.ThemeDTO;
+import com.example.demo.client_ui.dto.config.ThemeRequest;
 import com.example.demo.module.system_management.service.SystemManagementService;
 import org.springframework.stereotype.Service;
 
@@ -19,5 +21,11 @@ public class SystemManagementServiceSP02Impl implements SystemManagementService 
         if (id.equals("2")) return AccountRoleDTO.ADMIN_ROLE;
 
         return AccountRoleDTO.USER_ROLE;
+    }
+
+    @Override
+    public ThemeDTO getTheme(ThemeRequest themeRequest) {
+        // TODO Auto-generated method stub
+        return null;
     }
 }
